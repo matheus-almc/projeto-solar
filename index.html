@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Economia Solar</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header / Nav -->
+  <header class="bg-white shadow-sm py-4 px-6 flex justify-between items-center max-w-5xl mx-auto rounded-b-xl">
+    <h1 class="text-xl font-bold text-amber-500 flex items-center gap-2">
+      ⚡ SolarEconomia
+    </h1>
+    <a href="#simulador" class="text-sm font-semibold bg-amber-500 hover:bg-amber-600 text-white py-2 px-4 rounded-lg transition">
+      Simular Agora
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-3xl mx-auto text-center mt-12 px-4">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+      Reduza em até <span class="text-amber-500">95%</span> a sua conta de luz
+    </h2>
+    <p class="mt-4 text-gray-600 text-lg">
+      Descubra em menos de 1 minuto quanto você pode economizar por mês gerando sua própria energia.
+    </p>
+  </section>
+
+  <!-- Card do Simulador (Formulário) -->
+  <section id="simulador" class="max-w-lg mx-auto bg-white mt-8 p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 mx-4">
+    <h3 class="text-xl font-bold text-gray-900 text-center mb-6">Simule sua Economia</h3>
+
+    <form id="solarForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">Qual o seu gasto médio mensal?</label>
+        <select id="contaLuz" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="R$ 300 a R$ 500">R$ 300 a R$ 500 / mês</option>
+          <option value="R$ 500 a R$ 1.000">R$ 500 a R$ 1.000 / mês</option>
+          <option value="Acima de R$ 1.000">Acima de R$ 1.000 / mês</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">O imóvel é próprio?</label>
+        <select id="tipoImovel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none" required>
+          <option value="Próprio">Sim, é próprio</option>
+          <option value="Alugado">Não, é alugado</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">Seu Nome:</label>
+        <input type="text" id="nomeCliente" placeholder="Digite seu nome" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none" required>
+      </div>
+
+      <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg transition flex justify-center items-center gap-2 text-lg">
+        📲 Ver Economia no WhatsApp
+      </button>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
