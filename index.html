@@ -1,68 +1,223 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador de Economia Solar</title>
+  <title>Etecc Solar | Engenharia Fotovoltaica & Economia com Willian Luiz</title>
+  
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- CSS Customizado -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Header / Nav -->
-  <header class="bg-white shadow-sm py-4 px-6 flex justify-between items-center max-w-5xl mx-auto rounded-b-xl">
-    <h1 class="text-xl font-bold text-amber-500 flex items-center gap-2">
-      ⚡ SolarEconomia
-    </h1>
-    <a href="#simulador" class="text-sm font-semibold bg-amber-500 hover:bg-amber-600 text-white py-2 px-4 rounded-lg transition">
-      Simular Agora
-    </a>
+  <!-- Meta Pixel / Google Ads Tags -->
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white">
+
+  <!-- Header Executivo -->
+  <header class="bg-slate-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+      
+      <!-- Logo e Nome da Empresa -->
+      <div class="flex items-center gap-2 sm:gap-3 font-extrabold text-white tracking-tight">
+        <img src="assets/images/logo.jpg" alt="Etecc Solar Logo" class="h-8 sm:h-12 w-auto object-contain rounded-lg">
+        <div>
+          <span class="text-base sm:text-xl text-white">ETECC</span> <span class="text-base sm:text-xl text-red-500">SOLAR</span>
+          <p class="text-[8px] sm:text-[10px] text-slate-400 font-normal tracking-wider uppercase -mt-1">Engenharia Fotovoltaica</p>
+        </div>
+      </div>
+
+      <!-- Botão CTA Header Reduzido para Mobile -->
+      <a href="#simulador" class="bg-red-600 hover:bg-red-500 text-white font-bold text-[11px] sm:text-sm px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-lg sm:rounded-xl transition-all duration-200 shadow-md shadow-red-600/20 whitespace-nowrap">
+        Simular Economia
+      </a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-3xl mx-auto text-center mt-12 px-4">
-    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-      Reduza em até <span class="text-amber-500">95%</span> a sua conta de luz
-    </h2>
-    <p class="mt-4 text-gray-600 text-lg">
-      Descubra em menos de 1 minuto quanto você pode economizar por mês gerando sua própria energia.
-    </p>
+        <!-- Hero Section com Gradiente e Animações Ativas -->
+        <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-solar-grid">
+        
+        <!-- Efeito de Luz Vermelha Neon de Fundo -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-red-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/60 to-slate-950 pointer-events-none"></div>
+
+        <!-- Adicionada a classe 'reveal' aqui para a animação de scroll -->
+        <div class="max-w-6xl mx-auto px-4 text-center relative z-10 reveal">
+            
+            <!-- Card do Consultor Willian Luiz (Sem fundo, sem bordas) -->
+            <div class="inline-flex flex-col sm:flex-row items-center gap-3 text-slate-200 text-xs md:text-sm font-semibold mb-8 text-center sm:text-left">
+            
+            <!-- Foto ampliada do Willian com sombra avermelhada -->
+            <img src="assets/images/willian.jpg" alt="Willian Luiz" class="w-16 h-16 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-red-500/50 shrink-0 shadow-lg shadow-red-600/30">
+
+            <span>Atendimento com <strong>Willian Luiz</strong></span>
+            
+            <!-- Botão e Ícone do Instagram Direto (SVG) -->
+            <a href="https://www.instagram.com/willianlluiz/" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1.5 bg-slate-800/80 hover:bg-slate-800 px-3 py-1.5 sm:py-1 rounded-full border border-slate-700/50 sm:ml-1 mt-1 sm:mt-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span>@willianlluiz</span>
+            </a>
+            </div>
+
+            <!-- Título com Destaque de Gradiente no Texto -->
+            <h1 class="text-3xl md:text-6xl font-black text-white tracking-tight leading-tight md:leading-tight">
+            Reduza em até <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-amber-400">95% o custo</span> da sua conta com Módulos Solares de Alta Eficiência
+            </h1>
+
+            <p class="mt-6 text-slate-400 text-base md:text-xl max-w-3xl mx-auto leading-relaxed">
+            Geração própria de energia com painéis monocristalinos e tecnologia de ponta. Respaldo de um grupo com <strong class="text-slate-200">20+ anos de tradição em grandes infraestruturas</strong>.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#simulador" class="w-full sm:w-auto bg-red-600 hover:bg-red-500 text-white font-extrabold text-base px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-red-600/30 flex items-center justify-center gap-2">
+                <i data-lucide="calculator" class="w-5 h-5"></i> Simular Projeto no WhatsApp
+            </a>
+            </div>
+        </div>
+        </section>
+
+        <!-- Barra de Autoridade -->
+        <section class="border-y border-slate-800/80 bg-slate-900/60 py-8 reveal">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="text-2xl md:text-3xl font-black text-red-500">+20 Anos</p>
+                <p class="text-xs md:text-sm text-slate-400 font-medium">Tradição do Grupo em Infraestrutura</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-black text-red-500">+200 Usinas</p>
+                <p class="text-xs md:text-sm text-slate-400 font-medium">Instalações em Operação</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-black text-red-500">A número 1</p>
+                <p class="text-xs md:text-sm text-slate-400 font-medium">Módulos & Inversores Premium</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-black text-red-500">Grátis</p>
+                <p class="text-xs md:text-sm text-slate-400 font-medium">Manutenção no Fechamento</p>
+            </div>
+            </div>
+        </section>
+
+  <!-- Vitrine de Módulos e Tecnologia Solar -->
+  <section class="py-20 bg-slate-900/40 border-b border-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-14 reveal">
+        <h2 class="text-2xl md:text-4xl font-black text-white">Engenharia Fotovoltaica de Primeira Linha</h2>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Módulos solares de alta conversão projetados para máxima durabilidade e resistência.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 relative overflow-hidden group hover:border-red-500/50 transition duration-300 reveal">
+          <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="grid" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Painéis Monocristalinos N-Type</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Maior captação de luz solar até em dias nublados, garantindo geração constante de energia.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 relative overflow-hidden group hover:border-red-500/50 transition duration-300 reveal">
+          <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Inversores de Alta Eficiência</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Tecnologia com monitoramento Wi-Fi em tempo real para você acompanhar a geração no celular.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 relative overflow-hidden group hover:border-red-500/50 transition duration-300 reveal">
+          <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">25 Anos de Garantia de Geração</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Proteção total no seu investimento com suporte pós-venda especializado e plano de manutenção.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Card do Simulador (Formulário) -->
-  <section id="simulador" class="max-w-lg mx-auto bg-white mt-8 p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 mx-4">
-    <h3 class="text-xl font-bold text-gray-900 text-center mb-6">Simule sua Economia</h3>
+  <!-- Simulador de Conversão (Willian Luiz) -->
+  <section id="simulador" class="py-20 relative reveal">
+    <div class="max-w-xl mx-auto px-4">
+      <div class="bg-slate-900 border border-red-600/30 p-6 sm:p-10 rounded-3xl shadow-2xl shadow-red-600/5 relative overflow-hidden">
+        
+        <div class="flex items-center gap-4 mb-6 pb-6 border-b border-slate-800">
+          <div class="w-14 h-14 rounded-2xl bg-red-600/20 border border-red-500/40 flex items-center justify-center shrink-0">
+            <i data-lucide="user-check" class="w-7 h-7 text-red-500"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">Simulador Etecc Solar</h2>
+            <p class="text-xs text-slate-400">Atendimento direto com o consultor <strong>Willian Luiz</strong></p>
+          </div>
+        </div>
 
-    <form id="solarForm" class="space-y-4">
-      <div>
-        <label class="block text-sm font-semibold text-gray-700 mb-1">Qual o seu gasto médio mensal?</label>
-        <select id="contaLuz" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none" required>
-          <option value="" disabled selected>Selecione uma opção</option>
-          <option value="R$ 300 a R$ 500">R$ 300 a R$ 500 / mês</option>
-          <option value="R$ 500 a R$ 1.000">R$ 500 a R$ 1.000 / mês</option>
-          <option value="Acima de R$ 1.000">Acima de R$ 1.000 / mês</option>
-        </select>
+        <div class="mb-6 p-3.5 bg-red-600/10 border border-red-600/20 rounded-xl flex items-center gap-3 text-red-300 text-xs sm:text-sm">
+          <i data-lucide="gift" class="w-5 h-5 shrink-0 text-red-500"></i>
+          <span><strong>Condição Exclusiva:</strong> Projetos fechados este mês ganham Plano de Manutenção Preventiva Grátis.</span>
+        </div>
+
+        <form id="solarForm" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+              Gasto médio na conta de luz:
+            </label>
+            <select id="contaLuz" class="w-full p-4 bg-slate-950 border border-slate-800 rounded-xl text-white font-medium focus:ring-2 focus:ring-red-500 outline-none transition" required>
+              <option value="" disabled selected>Selecione a faixa de valor</option>
+              <option value="R$ 300 a R$ 600">R$ 300 a R$ 600 / mês</option>
+              <option value="R$ 600 a R$ 1.200">R$ 600 a R$ 1.200 / mês</option>
+              <option value="R$ 1.200 a R$ 3.000">R$ 1.200 a R$ 3.000 / mês</option>
+              <option value="Acima de R$ 3.000">Acima de R$ 3.000 / mês</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+              Perfil do Imóvel:
+            </label>
+            <select id="tipoImovel" class="w-full p-4 bg-slate-950 border border-slate-800 rounded-xl text-white font-medium focus:ring-2 focus:ring-red-500 outline-none transition" required>
+              <option value="Residencial Próprio">Casa / Residencial Próprio</option>
+              <option value="Comercial / Empresa">Comércio / Empresa</option>
+              <option value="Agronegócio / Rural">Propriedade Rural</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+              Seu Nome:
+            </label>
+            <input type="text" id="nomeCliente" placeholder="Digite seu nome completo" class="w-full p-4 bg-slate-950 border border-slate-800 rounded-xl text-white font-medium focus:ring-2 focus:ring-red-500 outline-none transition" required>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+              Cidade / Estado:
+            </label>
+            <input type="text" id="cidadeCliente" placeholder="Ex: Itanhaém / SP" class="w-full p-4 bg-slate-950 border border-slate-800 rounded-xl text-white font-medium focus:ring-2 focus:ring-red-500 outline-none transition" required>
+          </div>
+
+          <button type="submit" class="w-full mt-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition-all duration-200 flex justify-center items-center gap-2 text-base uppercase tracking-wide">
+            <i data-lucide="message-square" class="w-5 h-5 fill-slate-950"></i> Receber Proposta com Willian Luiz
+          </button>
+        </form>
       </div>
-
-      <div>
-        <label class="block text-sm font-semibold text-gray-700 mb-1">O imóvel é próprio?</label>
-        <select id="tipoImovel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none" required>
-          <option value="Próprio">Sim, é próprio</option>
-          <option value="Alugado">Não, é alugado</option>
-        </select>
-      </div>
-
-      <div>
-        <label class="block text-sm font-semibold text-gray-700 mb-1">Seu Nome:</label>
-        <input type="text" id="nomeCliente" placeholder="Digite seu nome" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none" required>
-      </div>
-
-      <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg transition flex justify-center items-center gap-2 text-lg">
-        📲 Ver Economia no WhatsApp
-      </button>
-    </form>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+    <p>© ETECC SOLAR — Engenharia & Módulos Solares.</p>
+    <div class="mt-2 flex justify-center gap-4">
+      <a href="https://www.instagram.com/eteccsolar/" target="_blank" class="hover:text-red-400 transition">@eteccsolar</a>
+      <span>•</span>
+      <a href="https://www.instagram.com/willianlluiz/" target="_blank" class="hover:text-red-400 transition">@willianlluiz</a>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

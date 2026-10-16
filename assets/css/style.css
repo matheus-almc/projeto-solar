@@ -1,0 +1,27 @@
+/* Fundo com Grid Solar + Gradiente Vermelho Neon de Alta Performance */
+.bg-solar-grid {
+  background-color: #020617;
+  background-image: 
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(220, 38, 38, 0.28), rgba(2, 6, 23, 0)),
+    linear-gradient(rgba(220, 38, 38, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 38, 38, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* ========================================== */
+/* ANIMAÇÃO DE SCROLL (FADE & SLIDE UP)      */
+/* ========================================== */
+
+/* Estado inicial: invisível e levemente deslocado para baixo */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Estado ativo: visível na posição original */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
